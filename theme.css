@@ -1,24 +1,32 @@
 /*All the theme styles, to use on all pages*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     --footer-height: 3em;
     --header-height: 3em;
-    --yellow: rgb(255,205,0)
+    --yellow: rgb(255, 205, 0)
 }
 
-html, body{
+html,
+body {
     min-height: 100%;
 }
 
-body{
+body {
     box-sizing: border-box;
     height: 100%;
     padding-bottom: var(--footer-height);
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
     font-size: 1em;
     font-weight: 700;
@@ -33,56 +41,60 @@ h1,h2,h3,h4,h5,h6,p,a{
     word-spacing: 0px;
 }
 
-h1{
+h1 {
     font-size: 2em;
 }
-h2{
+
+h2 {
     font-size: 1.5em;
 }
-h3{
+
+h3 {
     font-size: 1.25em;
 }
+
 p {
     font-size: 1em;
 }
 
-.yellow{
-    background-color:rgb(255, 205,0)
+.yellow {
+    background-color: rgb(255, 205, 0)
 }
 
-.darkgrey{
-    background-color:#262626
+.darkgrey {
+    background-color: #262626
 }
 
-.darkgrey > p{
+.darkgrey>p {
     color: #aeaeae;
 }
 
-.left{
+.left {
     float: left
 }
 
-.right{
-    float:right
+.right {
+    float: right
 }
 
-.clear{
+.clear {
     clear: both;
     height: auto;
     min-height: 2em;
 }
 
-#main{
+#main {
     padding: 1em;
+    padding-bottom: 2em;
 }
 
-.title{
+.title {
     width: auto;
     text-align: center;
     margin: 1em;
 }
 
-.box{
+.box {
     padding: 0;
     margin: 2em;
     text-align: center;
@@ -92,48 +104,21 @@ p {
     color: black;
 }
 
-.box > p{
+.box>p {
     padding: 1em;
 }
 
-.box:hover > .right{
+.box:hover>.right {
     background-color: black;
     color: var(--yellow);
 }
 
-/*.link::after{
-    content: ">";
-    position: relative;
-    right: 0;
-    top: 0;
-    color: var(--yellow);
-    font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
-    font-size: 1em;
-    font-weight: 700;
-    font-style: normal;
-    font-variant: normal;
-    text-decoration: none;
-    text-align: left;
-    text-indent: 0px;
-    line-height: 116%;
-    vertical-align: middle;
-    letter-spacing: normal;
-    word-spacing: 0px;
-    height: auto;
-    padding-left:0.5em;
-    padding-right:0.5em;
-}
-
-.link:hover::after{
-    background-color: black;
-}*/
-
-#wrapper{
+#wrapper {
     position: relative;
     min-height: 100%;
 }
 
-#footer{
+#footer {
     position: relative;
     top: 0;
     height: var(--footer-height);
@@ -141,11 +126,32 @@ p {
     box-sizing: border-box;
 }
 
-#header{
+#header {
     height: var(--header-height);
     padding: 0.5em;
 }
 
-#header > img {
-    height: 100%;
+#header>a{
+    text-align: right;
+    color: black;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+#personalLogo{
+    height: var(--header-height);
+}
+
+.column-1 {
+    width: 40%;
+    float: left;
+}
+
+.column-2 {
+    width: 60%;
+    float: right;
+}
+
+.burndownchart{
+    width:100%;
 }
