@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    --footer-height: 3em;
+    --header-height: 3em;
 }
 
 html, body{
@@ -12,10 +14,10 @@ html, body{
 body{
     box-sizing: border-box;
     height: 100%;
-    padding-bottom: 2em;
+    padding-bottom: var(--footer-height);
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,a{
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
     font-size: 1em;
     font-weight: 700;
@@ -77,5 +79,16 @@ p {
 #footer{
     position: relative;
     top: 0;
-    height: 2em;
+    height: var(--footer-height);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#header{
+    height: var(--header-height);
+    padding: 0.5em;
+}
+
+#header > img {
+    height: 100%;
 }
