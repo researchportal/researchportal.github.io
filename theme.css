@@ -94,6 +94,17 @@ p {
     margin: 1em;
 }
 
+.title a{
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0.1em;
+}
+
+.title a, .title h1{
+    display: inline;
+}
+
 .box {
     padding: 0;
     margin: 2em;
@@ -131,14 +142,14 @@ p {
     padding: 0.5em;
 }
 
-#header>a{
+#header>a {
     text-align: right;
     color: black;
     vertical-align: middle;
     line-height: 1em;
 }
 
-#personalLogo{
+#personalLogo {
     height: var(--header-height);
 }
 
@@ -152,6 +163,6 @@ p {
     float: right;
 }
 
-.burndownchart{
-    width:100%;
+.burndownchart {
+    width: 100%;
 }
