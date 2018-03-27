@@ -298,7 +298,19 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+<<<<<<< Updated upstream
     .content .title {
         font-size: 1em;
     }
 }
+=======
+  .content .title {
+    font-size: 1em;
+  }
+
+
+  .projectoverview .box {
+    margin-right: 0em;
+  }
+}
+>>>>>>> Stashed changes
