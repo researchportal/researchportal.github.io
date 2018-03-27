@@ -1,4 +1,10 @@
-/*All the theme styles, to use on all pages*/
+/*
+All the theme styles, used on all pages.
+Based on the style of the University of Utrecht.
+*/
+
+
+/*** Base styles */
 
 * {
     margin: 0;
@@ -65,7 +71,8 @@ h3 {
     font-size: 1.25em;
 }
 
-p, form {
+p,
+form {
     font-family: "Merriweather", "Bembo", Georgia, Times, "Times New Roman", serif;
     font-size: 1em;
     font-weight: normal;
@@ -103,6 +110,22 @@ p, form {
     overflow: hidden;
 }
 
+#wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+#footer {
+    position: relative;
+    top: 0;
+    height: var(--footer-height);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
+/*** Header */
+
 .title {
     width: auto;
     text-align: center;
@@ -120,6 +143,37 @@ p, form {
 .title h1 {
     display: inline;
 }
+
+#header {
+    height: var(--header-height);
+    padding: 0.5em;
+}
+
+#header .user a {
+    text-align: right;
+    color: black;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+#personalLogo {
+    height: var(--header-height);
+}
+
+#UULogo {
+    height: 100%;
+}
+
+
+/*** Homepage */
+
+.addproject {
+    margin-left: 50%;
+    background-color: #C00A35;
+}
+
+
+/*** Link boxes */
 
 .box {
     padding: 0;
@@ -144,42 +198,8 @@ p, form {
     color: var(--yellow);
 }
 
-.addproject {
-    margin-left: 50%;
-}
 
-#wrapper {
-    position: relative;
-    min-height: 100%;
-}
-
-#footer {
-    position: relative;
-    top: 0;
-    height: var(--footer-height);
-    padding: 1em;
-    box-sizing: border-box;
-}
-
-#header {
-    height: var(--header-height);
-    padding: 0.5em;
-}
-
-#header .user a {
-    text-align: right;
-    color: black;
-    vertical-align: middle;
-    line-height: 1em;
-}
-
-#personalLogo {
-    height: var(--header-height);
-}
-
-#UULogo{
-    height: 100%;
-}
+/*** Project page */
 
 .column-1 {
     width: 40%;
@@ -194,6 +214,9 @@ p, form {
 .burndownchart {
     width: 100%;
 }
+
+
+/*** Settings/Edit form */
 
 form {
     text-align: right;
@@ -228,10 +251,16 @@ form a {
     color: white;
 }
 
+
+/*** Budget */
+
 .budget>p {
     margin: 1em;
     font-size: 2em;
 }
+
+
+/*** Tools */
 
 .tool {
     background: var(--yellow);
@@ -262,4 +291,32 @@ form a {
 .tool a {
     color: var(--light-yellow);
     font-style: normal;
+}
+
+/*** Responsive */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+.row {
+  width: 100%;
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
