@@ -7,6 +7,7 @@
     --header-height: 3em;
     --yellow: rgb(255, 205, 0);
     --light-yellow: rgb(255, 244, 200);
+    box-sizing: border-box;
 }
 
 html,

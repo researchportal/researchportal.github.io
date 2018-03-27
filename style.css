@@ -1,1 +1,125 @@
 /*Specific styles to use on a subset (possibly only one) of the pages*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
+
+  --header-height: 3em;
+  --footer-height: 3em;
+
+  --yellow: rgb(255, 205, 0);
+}
+
+html, body {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 24px;
+
+  background-color: var(--yellow);
+  display: block;
+  float: left;
+}
+
+.header .wrapper * {
+  float: left;
+}
+
+.header .logo img {
+  height: 100%;
+}
+
+.header .user {
+  float: right;
+  height: 100%:
+}
+
+.header .user * {
+  float: left;
+  color: #000;
+  text-decoration: none;
+}
+
+.header .user p {
+  padding-right: 1em;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.header .user img {
+  height: 100%;
+}
+
+.content {
+
+}
+
+.content .title {
+
+}
+
+.content .box {
+  display: block;
+  padding: 1em;
+  min-height: 2em;
+  text-align: left;
+  background-color: var(--yellow);
+}
+
+.content .box.link {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.content .box.link::after {
+  content: '>';
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  width: 3em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.content .box.link:hover::after {
+  background-color: #000;
+  color: #fff;
+}
+
+.col-right {
+  float: right;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 0.5em;
+
+  height: var(--footer-height);
+
+  display: block;
+  background-color: #262626;
+  color: #aeaeae;
+}
+
+.footer * {
+  position: relative;
+}
