@@ -212,7 +212,12 @@ body {
 }
 
 .projectoverview .box {
+<<<<<<< HEAD
     margin-bottom: 1em;
+=======
+  margin-bottom: 1em;
+  margin-right: 1em;
+>>>>>>> 1a01030be63411ccb2b98810797d5dc69c13d9fd
 }
 
 .projectoverview .box * {
