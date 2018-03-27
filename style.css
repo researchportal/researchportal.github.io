@@ -7,19 +7,15 @@ Based on the style of the University of Utrecht.
 /*** Base styles */
 
 * {
-  margin: 0;
-  padding: 0;
-
-  box-sizing: border-box;
-
-  font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
-
-  --header-height: 4em;
-  --footer-height: 4em;
-
-  --yellow: rgb(255, 205, 0);
-  --light-yellow: rgb(255, 244, 200);
-  --red: #c00a35;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
+    --header-height: 4em;
+    --footer-height: 4em;
+    --yellow: rgb(255, 205, 0);
+    --light-yellow: rgb(255, 244, 200);
+    --red: #c00a35;
 }
 
 h1,
@@ -72,203 +68,236 @@ form {
     font-weight: normal;
 }
 
-html, body {
-  width: 100%;
+html,
+body {
+    width: 100%;
 }
 
 .wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
+    max-width: 1024px;
+    margin: 0 auto;
 }
+
+
+/*** Title */
+
+.title a {
+    float: left;
+    font-size: 1em;
+    margin-top: 0.7em;
+    margin-right: 1em;
+}
+
 
 /*** Header */
 
 .header {
-  height: var(--header-height);
-  width: 100%;
-  padding: 0.5em;
-  margin-bottom: 24px;
-
-  background-color: var(--yellow);
-  display: block;
-  float: left;
+    height: var(--header-height);
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 24px;
+    background-color: var(--yellow);
+    display: block;
+    float: left;
 }
 
 .header .wrapper * {
-  float: left;
+    float: left;
 }
 
 .header .logo img {
-  height: 100%;
+    height: 100%;
 }
 
 .header .user {
-  float: right;
-  height: 100%;
+    float: right;
+    height: 100%;
 }
 
 .header .user * {
-  float: left;
-  color: #000;
-  text-decoration: none;
+    float: left;
+    color: #000;
+    text-decoration: none;
 }
 
 .header .user p {
-  padding-right: 1em;
-  line-height: var(--header-height);
-  font-size: 12px;
+    padding-right: 1em;
+    line-height: var(--header-height);
+    font-size: 12px;
 }
 
 .header .user img {
-  height: 100%;
+    height: 100%;
 }
 
 .content {
-  padding: 1em;
+    padding: 1em;
 }
 
 .box {
-  padding: 1em;
-  background-color: var(--yellow);
-  display: block;
-
-  min-height: 2em;
-  color: black;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
+    padding: 1em;
+    background-color: var(--yellow);
+    display: block;
+    min-height: 2em;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
 }
 
 .box.link {
-  text-decoration: none;
-  color: #000;
-  position: relative;
+    text-decoration: none;
+    color: #000;
+    position: relative;
 }
 
-
 .box.link::after {
-  content: '>';
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0px;
-  width: 3em;
-  padding: 1em;
-  box-sizing: border-box;
+    content: '>';
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 3em;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .box.link:hover::after {
-  background-color: #000;
-  color: var(--yellow);
+    background-color: #000;
+    color: var(--yellow);
 }
 
 .box.addproject {
-  background-color: var(--red);
-  color: white;
+    background-color: var(--red);
+    color: white;
 }
 
 .box.addproject:hover::after {
-  color: var(--red);
+    color: var(--red);
 }
 
 .col-right {
-  float: right;
+    float: right;
 }
 
 .footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-  padding: 1em;
-
-  height: var(--footer-height);
-
-  display: block;
-  background-color: #262626;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 1em;
+    height: var(--footer-height);
+    display: block;
+    background-color: #262626;
 }
 
 .footer * {
-  position: relative;
-  color: #aeaeae;
+    position: relative;
+    color: #aeaeae;
 }
 
 .burndownchart {
-  width: 100%;
+    width: 100%;
 }
 
-.row.projectoverview > div {
-  float: right;
+.row.projectoverview>div {
+    float: right;
 }
 
 .content .title {
-  color: black;
-  font-size: 2em;
-  font-weight: bold;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .projectoverview .box {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .projectoverview .box * {
-  float: right;
+    float: right;
 }
 
 .projectoverview .box::after {
-  content: none;
+    content: none;
 }
 
 .projectoverview .box:hover i {
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0px;
-  width: 3em;
-  padding: 1em;
-  box-sizing: border-box;
-  background-color: #000;
-  color: var(--yellow);
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 3em;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #000;
+    color: var(--yellow);
 }
+
 
 /*** Responsive */
 
+
 /* For mobile phones: */
+
 [class*="col-"] {
     width: 100%;
 }
 
 .row {
-  width: 100%;
-  padding: 0.5em;
+    width: 100%;
+    padding: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
     .header .user p {
-      font-size: 18px;
-      line-height: 2.8em;
+        font-size: 18px;
+        line-height: 2.8em;
     }
 }
 
 @media only screen and (max-width: 768px) {
-  .content .title {
-    font-size: 1em;
-  }
+    .content .title {
+        font-size: 1em;
+    }
 }
