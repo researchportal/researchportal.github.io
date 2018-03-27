@@ -42,6 +42,7 @@ input {
     vertical-align: middle;
     letter-spacing: normal;
     word-spacing: 0px;
+    color: black;
 }
 
 h1 {
@@ -216,7 +217,6 @@ form a{
 
 .tool{
     background: var(--yellow);
-    color: white;
     margin: 2em;
     padding: 2em;
     min-width: 250px;
