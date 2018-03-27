@@ -165,7 +165,7 @@ p, form {
     padding: 0.5em;
 }
 
-#header>a {
+#header .user a {
     text-align: right;
     color: black;
     vertical-align: middle;
