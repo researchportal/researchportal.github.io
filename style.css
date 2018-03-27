@@ -208,6 +208,10 @@ html, body {
   font-weight: bold;
 }
 
+.projectoverview .box {
+  margin-bottom: 1em;
+}
+
 .projectoverview .box * {
   float: right;
 }
