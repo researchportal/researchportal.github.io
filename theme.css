@@ -1,5 +1,8 @@
 /*All the theme styles, to use on all pages*/
 
+
+/*Base styles*/
+
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +68,8 @@ h3 {
     font-size: 1.25em;
 }
 
-p, form {
+p,
+form {
     font-family: "Merriweather", "Bembo", Georgia, Times, "Times New Roman", serif;
     font-size: 1em;
     font-weight: normal;
@@ -103,6 +107,21 @@ p, form {
     overflow: hidden;
 }
 
+#wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+#footer {
+    position: relative;
+    top: 0;
+    height: var(--footer-height);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
 .title {
     width: auto;
     text-align: center;
@@ -120,6 +139,34 @@ p, form {
 .title h1 {
     display: inline;
 }
+
+#header {
+    height: var(--header-height);
+    padding: 0.5em;
+}
+
+#header .user a {
+    text-align: right;
+    color: black;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+#personalLogo {
+    height: var(--header-height);
+}
+
+#UULogo {
+    height: 100%;
+}
+
+/*Homepage*/
+
+.addproject {
+    margin-left: 50%;
+}
+
+/*Link boxes*/
 
 .box {
     padding: 0;
@@ -144,42 +191,7 @@ p, form {
     color: var(--yellow);
 }
 
-.addproject {
-    margin-left: 50%;
-}
-
-#wrapper {
-    position: relative;
-    min-height: 100%;
-}
-
-#footer {
-    position: relative;
-    top: 0;
-    height: var(--footer-height);
-    padding: 1em;
-    box-sizing: border-box;
-}
-
-#header {
-    height: var(--header-height);
-    padding: 0.5em;
-}
-
-#header .user a {
-    text-align: right;
-    color: black;
-    vertical-align: middle;
-    line-height: 1em;
-}
-
-#personalLogo {
-    height: var(--header-height);
-}
-
-#UULogo{
-    height: 100%;
-}
+/*Project page*/
 
 .column-1 {
     width: 40%;
@@ -194,6 +206,8 @@ p, form {
 .burndownchart {
     width: 100%;
 }
+
+/*Settings/Edit form*/
 
 form {
     text-align: right;
@@ -228,10 +242,14 @@ form a {
     color: white;
 }
 
+/*Budget*/
+
 .budget>p {
     margin: 1em;
     font-size: 2em;
 }
+
+/*Tools*/
 
 .tool {
     background: var(--yellow);
