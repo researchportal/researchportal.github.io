@@ -1,7 +1,10 @@
-/*All the theme styles, to use on all pages*/
+/*
+All the theme styles, used on all pages.
+Based on the style of the University of Utrecht.
+*/
 
 
-/*Base styles*/
+/*** Base styles */
 
 * {
     margin: 0;
@@ -121,7 +124,7 @@ form {
 }
 
 
-/*Header*/
+/*** Header */
 
 .title {
     width: auto;
@@ -162,7 +165,7 @@ form {
 }
 
 
-/*Homepage*/
+/*** Homepage */
 
 .addproject {
     margin-left: 50%;
@@ -170,7 +173,7 @@ form {
 }
 
 
-/*Link boxes*/
+/*** Link boxes */
 
 .box {
     padding: 0;
@@ -196,7 +199,7 @@ form {
 }
 
 
-/*Project page*/
+/*** Project page */
 
 .column-1 {
     width: 40%;
@@ -213,7 +216,7 @@ form {
 }
 
 
-/*Settings/Edit form*/
+/*** Settings/Edit form */
 
 form {
     text-align: right;
@@ -249,7 +252,7 @@ form a {
 }
 
 
-/*Budget*/
+/*** Budget */
 
 .budget>p {
     margin: 1em;
@@ -257,7 +260,7 @@ form a {
 }
 
 
-/*Tools*/
+/*** Tools */
 
 .tool {
     background: var(--yellow);
@@ -290,7 +293,7 @@ form a {
     font-style: normal;
 }
 
-/*** Responsive*/
+/*** Responsive */
 
 /* For mobile phones: */
 [class*="col-"] {
