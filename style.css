@@ -1,4 +1,10 @@
-/*Specific styles to use on a subset (possibly only one) of the pages*/
+/*
+All the theme styles, used on all pages.
+Based on the style of the University of Utrecht.
+*/
+
+
+/*** Base styles */
 
 * {
   margin: 0;
@@ -8,10 +14,62 @@
 
   font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
 
-  --header-height: 3em;
-  --footer-height: 3em;
+  --header-height: 4em;
+  --footer-height: 4em;
 
   --yellow: rgb(255, 205, 0);
+  --light-yellow: rgb(255, 244, 200);
+  --red: #c00a35;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form,
+input {
+    font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none;
+    text-align: left;
+    text-indent: 0px;
+    line-height: 116%;
+    vertical-align: middle;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    color: black;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p,
+form {
+    font-family: "Merriweather", "Bembo", Georgia, Times, "Times New Roman", serif;
+    font-size: 1em;
+    font-weight: normal;
 }
 
 html, body {
@@ -22,6 +80,8 @@ html, body {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+/*** Header */
 
 .header {
   height: var(--header-height);
@@ -55,7 +115,7 @@ html, body {
 
 .header .user p {
   padding-right: 1em;
-  line-height: 30px;
+  line-height: var(--header-height);
   font-size: 12px;
 }
 
@@ -64,27 +124,28 @@ html, body {
 }
 
 .content {
-
-}
-
-.content .title {
-}
-
-.content .box {
-  display: block;
   padding: 1em;
-  min-height: 2em;
-  text-align: left;
-  background-color: var(--yellow);
 }
 
-.content .box.link {
+.box {
+  padding: 1em;
+  background-color: var(--yellow);
+  display: block;
+
+  min-height: 2em;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
+}
+
+.box.link {
   text-decoration: none;
   color: #000;
   position: relative;
 }
 
-.content .box.link::after {
+.box.link::after {
   content: '>';
   display: block;
   position: absolute;
@@ -97,9 +158,18 @@ html, body {
   box-sizing: border-box;
 }
 
-.content .box.link:hover::after {
+.box.link:hover::after {
   background-color: #000;
   color: var(--yellow);
+}
+
+.box.addproject {
+  background-color: var(--red);
+  color: white;
+}
+
+.box.addproject:hover::after {
+  color: var(--red);
 }
 
 .col-right {
@@ -110,17 +180,17 @@ html, body {
   position: absolute;
   width: 100%;
   bottom: 0px;
-  padding: 0.5em;
+  padding: 1em;
 
   height: var(--footer-height);
 
   display: block;
   background-color: #262626;
-  color: #aeaeae;
 }
 
 .footer * {
   position: relative;
+  color: #aeaeae;
 }
 
 .burndownchart {
@@ -130,4 +200,49 @@ html, body {
 
 .row.projectoverview > div {
   float: right;
+}
+
+.content .title {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/*** Responsive */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+.row {
+  width: 100%;
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .header .user p {
+      font-size: 18px;
+      line-height: 2.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .content .title {
+    font-size: 1em;
+  }
 }
