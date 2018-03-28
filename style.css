@@ -81,7 +81,6 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     padding-bottom: var(--footer-height);
-    overflow: auto;
 }
 
 
@@ -107,33 +106,32 @@ body {
     float: left;
 }
 
-.header .wrapper * {
-    float: left;
+.logo,
+.logo a {
+    display: inline-block;
 }
 
-.header .logo img {
+.header img {
     height: 100%;
 }
 
 .header .user {
     float: right;
     height: 100%;
+    text-align: right;
 }
 
 .header .user * {
     float: left;
     color: #000;
     text-decoration: none;
+    display: inline-block;
 }
 
 .header .user p {
     padding-right: 1em;
     line-height: var(--header-height);
     font-size: 12px;
-}
-
-.header .user img {
-    height: 100%;
 }
 
 .content {
@@ -185,6 +183,7 @@ body {
     color: var(--red);
 }
 
+
 /*** Tools */
 
 .tool {
@@ -213,19 +212,56 @@ body {
     right: 0.5em;
     position: absolute;
 }
+
 .tool h1 {
-  margin-bottom: 0.5em;
-  font-weight: bold;
+    margin-bottom: 0.5em;
+    font-weight: bold;
 }
 
 .tool p {
-  margin-bottom: 0.5em;
-  margin-left: 0.3em;
+    margin-bottom: 0.5em;
+    margin-left: 0.3em;
 }
 
 .tool a {
-  color: var(--light-yellow);
-  font-style: normal;
+    color: var(--light-yellow);
+    font-style: normal;
+}
+
+
+/*** Settings/Edit form */
+
+form {
+    text-align: right;
+    max-width: 450px;
+}
+
+input {
+    width: 250px;
+    margin: 1em;
+    margin-left: 2em;
+    height: 2em;
+    border: 1px solid var(--yellow);
+    padding: 0.3em;
+}
+
+input[type=submit] {
+    text-align: center;
+    width: 75px;
+    background: var(--yellow);
+    color: white;
+}
+
+input[name=collaborators] {
+    width: 216px;
+}
+
+form a {
+    padding: 0.3em;
+    margin: 1em;
+    margin-left: 0em;
+    background-color: var(--yellow);
+    color: white;
 }
 
 .col-right {
@@ -261,8 +297,8 @@ body {
 }
 
 .projectoverview .box {
-  margin-bottom: 1em;
-  margin-right: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 .projectoverview .box * {
@@ -288,9 +324,11 @@ body {
 }
 
 .budget p {
-  font-size: 2em;
-  margin-bottom: 1em;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
+
+
 /*** Responsive */
 
 
@@ -350,12 +388,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .content .title {
-    font-size: 1em;
-  }
-
-
-  .projectoverview .box {
-    margin-right: 0em;
-  }
+    .content .title {
+        font-size: 1em;
+    }
+    .projectoverview .box {
+        margin-right: 0em;
+    }
 }
