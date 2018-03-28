@@ -13,6 +13,7 @@ Based on the style of the University of Utrecht.
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
     --header-height: 4em;
     --footer-height: 4em;
+    --footer-height-negative: -4em;
     --yellow: rgb(255, 205, 0);
     --light-yellow: rgb(255, 244, 200);
     --red: #c00a35;
@@ -76,8 +77,11 @@ body {
 }
 
 .wrapper {
+    min-height: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    padding-bottom: var(--footer-height);
+    overflow: auto;
 }
 
 
@@ -134,6 +138,7 @@ body {
 
 .content {
     padding: 1em;
+    overflow: auto;
 }
 
 .box {
@@ -228,9 +233,8 @@ body {
 }
 
 .footer {
-    position: absolute;
     width: 100%;
-    bottom: 0px;
+    margin-top: var(--footer-height-negative);
     padding: 1em;
     height: var(--footer-height);
     display: block;
