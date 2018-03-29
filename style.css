@@ -121,17 +121,22 @@ body {
     text-align: right;
 }
 
-.header .user * {
-    float: left;
-    color: #000;
-    text-decoration: none;
+/* .header .user * {
+    float: right;
     display: inline-block;
-}
+} */
 
 .header .user p {
+    display: inline-block;
+    float: right;
     padding-right: 1em;
     line-height: var(--header-height);
     font-size: 12px;
+}
+
+.header .user img {
+    display: inline-block;
+    float: right;
 }
 
 .content {
