@@ -1,0 +1,219 @@
+body {
+    background: #f6f6f6;
+    color: #666666;
+    font-family: "Open Sans", "Frutiger", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 15px;
+    text-decoration: none;
+    color: #333333;
+    list-style-type: circle;
+    font-size: 12px;
+}
+
+li {
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+}
+
+.field-icon {
+    float: right;
+    margin-top: -45px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-container {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    width: 320px;
+}
+
+.form-header {
+    position: absolute;
+    text-align: center;
+    background: #ffffff;
+    max-width: 320px;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-module {
+    position: absolute;
+    background: #ffffff;
+    max-width: 320px;
+    top: 75px;
+    width: 100%;
+    border-top: 5px solid #ffd439;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-module .info {
+    cursor: pointer;
+    position: absolute;
+    top: -0;
+    right: -0;
+    background: #ffd439;
+    width: 30px;
+    height: 30px;
+    margin: -5px 0 0;
+    color: #333333;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.form-module .info:hover .toggle {
+    display: block;
+}
+
+.form-module .info .toggle {
+    position: absolute;
+    top: 5px;
+    right: -65px;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    width: auto;
+    padding: 5px;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.form-module .info .toggle:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    display: block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+.form-module .form {
+    display: none;
+    padding: 40px;
+}
+
+.form-module .form select {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 400;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.form-module .form:nth-child(2) {
+    display: block;
+}
+
+.form-module h2 {
+    margin: 0 0 20px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.form-module input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 400;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.form-module input:focus {
+    border: 1px solid #ffd439;
+    color: #333333;
+}
+
+.form-module button {
+    cursor: pointer;
+    background: #ffd439;
+    width: 100%;
+    border: 0;
+    font-size: inherit;
+    padding: 10px 15px;
+    color: #333333;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.form-module .button-load {
+    font-size: inherit;
+}
+
+.form-module .cta {
+    background: #f2f2f2;
+    width: 100%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-module .cta a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.form-module .link {
+    text-decoration: underline;
+    color: #333333;
+}
+
+.form-module .link-right {
+    text-decoration: none;
+    color: #333333;
+    float: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.form-module .link-left {
+    text-decoration: none;
+    color: #333333;
+    float: left;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.form-module .flag-right {
+    float: right;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
