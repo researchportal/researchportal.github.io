@@ -119,6 +119,7 @@ body {
     float: right;
     height: 100%;
     text-align: right;
+    width: 180px;
 }
 
 /* .header .user * {
@@ -163,6 +164,7 @@ body {
 
 .box.link::after {
     content: '>';
+    font-weight: bold;
     display: block;
     position: absolute;
     height: 100%;
@@ -258,15 +260,21 @@ input[type=submit] {
 }
 
 input[name=collaborators] {
-    width: 216px;
+    width: calc(250px - 2em);
 }
 
 form a {
-    padding: 0.3em;
+    padding: 0.3em 0 0.3em 0;
     margin: 1em;
     margin-left: 0em;
     background-color: var(--yellow);
     color: white;
+    text-align: center;
+}
+
+form a.add {
+    display: inline-block;
+    width: 1em;
 }
 
 textarea[name=notes] {
@@ -405,5 +413,13 @@ textarea[name=notes] {
     }
     .projectoverview .box {
         margin-right: 0em;
+    }
+
+    .header .user {
+        width: initial;
+    }
+
+    .header .user p {
+        display: none;
     }
 }
