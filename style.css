@@ -3,7 +3,6 @@ All the theme styles, used on all pages.
 Based on the style of the University of Utrecht.
 */
 
-
 /*** Base styles */
 
 * {
@@ -28,7 +27,8 @@ h6,
 p,
 a,
 form,
-input, textarea {
+input,
+textarea {
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
     font-size: 1em;
     font-weight: 700;
@@ -83,7 +83,6 @@ body {
     padding-bottom: var(--footer-height);
 }
 
-
 /*** Title */
 
 .title a {
@@ -92,7 +91,6 @@ body {
     margin-top: 0.7em;
     margin-right: 1em;
 }
-
 
 /*** Header */
 
@@ -190,7 +188,6 @@ body {
     color: var(--red);
 }
 
-
 /*** Tools */
 
 .grid-3x3 {
@@ -235,7 +232,6 @@ body {
     font-style: normal;
 }
 
-
 /*** Settings/Edit form */
 
 form {
@@ -243,7 +239,8 @@ form {
     max-width: 450px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 250px;
     margin: 1em;
     margin-left: 2em;
@@ -281,6 +278,28 @@ textarea[name=notes] {
     height: 10em;
     max-width: 250px;
     min-width: 250px;
+}
+
+/**** documents */
+
+.rootfolder {}
+
+.file {
+    background-color: lightgrey;
+    padding: 0.2em;
+    margin: 0.1em;
+    margin-bottom:0.5em;
+}
+
+.file .name {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.file .metadata {
+    font-size: 0.8em;
+    font-style: italic;
+    color: grey;
 }
 
 .col-right {
@@ -347,9 +366,7 @@ textarea[name=notes] {
     margin-bottom: 1em;
 }
 
-
 /*** Responsive */
-
 
 /* For mobile phones: */
 
@@ -414,11 +431,9 @@ textarea[name=notes] {
     .projectoverview .box {
         margin-right: 0em;
     }
-
     .header .user {
         width: initial;
     }
-
     .header .user p {
         display: none;
     }
