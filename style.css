@@ -159,22 +159,11 @@ body {
     color: #000;
     position: relative;
 }
-
-.box.link::after {
-    content: '>';
-    font-weight: bold;
-    display: block;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0px;
-    width: 3em;
-    padding: 1em;
-    box-sizing: border-box;
+.box.link .fa {
+    float: right;
 }
 
-.box.link:hover::after {
+.box.link:hover .fa {
     background-color: #000;
     color: var(--yellow);
 }
@@ -184,7 +173,7 @@ body {
     color: white;
 }
 
-.box.addproject:hover::after {
+.box.addproject:hover .fa {
     color: var(--red);
 }
 
@@ -230,6 +219,54 @@ body {
 .tool a {
     color: var(--light-yellow);
     font-style: normal;
+}
+
+/*** Resources ***/
+.grid-resources {
+    --height: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--height) * 5), 1fr));
+    grid-gap: calc(var(--height) / 2);
+}
+
+.grid-resources > div {
+    display: grid;
+    grid-template-columns: var(--height) auto;
+    grid-gap: 25px;
+    height: var(--height);
+    font-size: 15px;
+    background: var(--yellow);
+    padding: 1em;
+    box-sizing: content-box;
+}
+
+.grid-resources > div > * {
+    display: block;
+    position: relative;
+}
+
+.grid-resources > div > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.grid-resources > div > .fa {
+    font-size: var(--height);
+}
+
+.grid-resources > div * {
+    color: white;
+    word-wrap: break-word;
+    display: block;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.grid-resources > div .sub {
+    color: gray;
+    font-size: 0.5em;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 
 /*** Settings/Edit form */
@@ -300,6 +337,21 @@ textarea[name=notes] {
     font-size: 0.8em;
     font-style: italic;
     color: grey;
+}
+
+.statistics {
+    background: var(--yellow);
+    padding: 0.5em;
+}
+
+.progress-bar {
+    display: grid;
+}
+.progress-bar > div {
+    padding: 0.2em;
+}
+.progress-bar .label {
+    white-space: nowrap;
 }
 
 .col-right {
