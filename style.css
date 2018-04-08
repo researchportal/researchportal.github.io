@@ -16,6 +16,13 @@ Based on the style of the University of Utrecht.
     --yellow: rgb(255, 205, 0);
     --light-yellow: rgb(255, 244, 200);
     --red: #c00a35;
+    --add-red: #9a0000;
+    --add-purple: #791D72;
+    --add-orange: #F08000;
+    --add-yellow: #FEF200;
+    --add-green: #419702;
+    --add-cyan: #36A2C9;
+    --add-blue: #094D8E;
 }
 
 h1,
@@ -329,19 +336,32 @@ textarea[name=notes] {
 
 .rootfolder {}
 
-.file {
+.rootfolder > div {
     background-color: lightgrey;
     padding: 0.2em;
     margin: 0.1em;
     margin-bottom:0.5em;
 }
 
-.file .name {
+.file {
+    color: var(--add-orange);
+}
+
+.computing  {
+    color: var(--add-cyan);
+}
+
+.rootfolder > div .fa {
+    float: right;
+    font-size: 2em;
+}
+
+.rootfolder > div .name {
     font-size: 1em;
     font-weight: normal;
 }
 
-.file .metadata {
+.rootfolder > div .metadata {
     font-size: 0.8em;
     font-style: italic;
     color: grey;
@@ -384,7 +404,7 @@ textarea[name=notes] {
     width: 100%;
 }
 
-.row.projectoverview>div {
+.row > div[class^='col-'] {
     float: right;
 }
 
@@ -394,7 +414,7 @@ textarea[name=notes] {
     font-weight: bold;
 }
 
-.projectoverview .box {
+.box {
     margin-bottom: 1em;
     margin-right: 1em;
 }
