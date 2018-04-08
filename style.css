@@ -181,6 +181,7 @@ body {
 }
 
 .box.addproject:hover .fa {
+    background-color: #FFF;
     color: var(--red);
 }
 
