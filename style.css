@@ -3,6 +3,7 @@ All the theme styles, used on all pages.
 Based on the style of the University of Utrecht.
 */
 
+
 /*** Base styles */
 
 * {
@@ -90,6 +91,7 @@ body {
     padding-bottom: var(--footer-height);
 }
 
+
 /*** Title */
 
 .title a {
@@ -98,6 +100,7 @@ body {
     margin-top: 0.7em;
     margin-right: 1em;
 }
+
 
 /*** Header */
 
@@ -126,6 +129,7 @@ body {
     text-align: right;
     width: 180px;
 }
+
 
 /* .header .user * {
     float: right;
@@ -166,8 +170,18 @@ body {
     color: #000;
     position: relative;
 }
+
 .box.link .fa {
     float: right;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 3em;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .box.link:hover .fa {
@@ -183,7 +197,13 @@ body {
 .box.addproject:hover .fa {
     background-color: #FFF;
     color: var(--red);
+    border: 3px solid var(--red);
 }
+
+.box.addproject .fa {
+    border: 3px solid var(--red);
+}
+
 
 /*** Tools */
 
@@ -237,7 +257,9 @@ body {
     font-style: normal;
 }
 
+
 /*** Resources ***/
+
 .grid-resources {
     --height: 50px;
     display: grid;
@@ -245,7 +267,7 @@ body {
     grid-gap: calc(var(--height) / 2);
 }
 
-.grid-resources > div {
+.grid-resources>div {
     display: grid;
     grid-template-columns: var(--height) auto;
     grid-gap: 25px;
@@ -256,20 +278,21 @@ body {
     box-sizing: content-box;
 }
 
-.grid-resources > div > * {
+.grid-resources>div>* {
     display: block;
     position: relative;
 }
 
-.grid-resources > div > img {
+.grid-resources>div>img {
     max-width: 100%;
     max-height: 100%;
 }
-.grid-resources > div > .fa {
+
+.grid-resources>div>.fa {
     font-size: var(--height);
 }
 
-.grid-resources > div * {
+.grid-resources>div * {
     color: white;
     word-wrap: break-word;
     display: block;
@@ -277,13 +300,14 @@ body {
     flex-wrap: wrap;
 }
 
-.grid-resources > div .sub {
+.grid-resources>div .sub {
     color: gray;
     font-size: 0.5em;
     width: 100%;
     bottom: 0;
     position: absolute;
 }
+
 
 /*** Settings/Edit form */
 
@@ -333,36 +357,37 @@ textarea[name=notes] {
     min-width: 250px;
 }
 
+
 /**** documents */
 
 .rootfolder {}
 
-.rootfolder > div {
+.rootfolder>div {
     background-color: lightgrey;
     padding: 0.2em;
     margin: 0.1em;
-    margin-bottom:0.5em;
+    margin-bottom: 0.5em;
 }
 
 .file {
     color: var(--add-orange);
 }
 
-.computing  {
+.computing {
     color: var(--add-cyan);
 }
 
-.rootfolder > div .fa {
+.rootfolder>div .fa {
     float: right;
     font-size: 2em;
 }
 
-.rootfolder > div .name {
+.rootfolder>div .name {
     font-size: 1em;
     font-weight: normal;
 }
 
-.rootfolder > div .metadata {
+.rootfolder>div .metadata {
     font-size: 0.8em;
     font-style: italic;
     color: grey;
@@ -376,9 +401,11 @@ textarea[name=notes] {
 .progress-bar {
     display: grid;
 }
-.progress-bar > div {
+
+.progress-bar>div {
     padding: 0.2em;
 }
+
 .progress-bar .label {
     white-space: nowrap;
 }
@@ -405,7 +432,7 @@ textarea[name=notes] {
     width: 100%;
 }
 
-.row > div[class^='col-'] {
+.row>div[class^='col-'] {
     float: right;
 }
 
@@ -447,7 +474,9 @@ textarea[name=notes] {
     margin-bottom: 1em;
 }
 
+
 /*** Responsive */
+
 
 /* For mobile phones: */
 
