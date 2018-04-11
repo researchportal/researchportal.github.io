@@ -119,34 +119,33 @@ body {
     display: inline-block;
 }
 
-.header img {
-    height: 100%;
+.header img#uulogo {
+    height: calc(var(--header-height) - 1em);
 }
 
 .header .user {
     float: right;
     height: 100%;
     text-align: right;
-    width: 180px;
 }
 
-
-/* .header .user * {
-    float: right;
-    display: inline-block;
-} */
+.user a {
+    display: grid;
+    grid-template: "name avatar" 1fr / 9em calc(var(--header-height) - 1em);
+    font-size: 18px;
+    height: 100%;
+    align-items: center;
+    grid-gap: 1em;
+}
 
 .header .user p {
-    display: inline-block;
-    float: right;
-    padding-right: 1em;
-    line-height: var(--header-height);
-    font-size: 12px;
+    grid-area: name;
+    text-align: right;
 }
 
 .header .user img {
-    display: inline-block;
-    float: right;
+    grid-area: avatar;
+    height: 100%;
 }
 
 .content {
@@ -524,10 +523,6 @@ textarea[name=notes] {
     .col-12 {
         width: 100%;
     }
-    .header .user p {
-        font-size: 18px;
-        line-height: 2.8em;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -543,5 +538,20 @@ textarea[name=notes] {
         text-align: left;
         align-items: baseline;
         grid-gap: 1em;
+    }
+
+    .user a {
+        display: grid;
+        grid-template: "avatar" 1fr / calc(var(--header-height) - 1em);
+    }
+    
+    .header .user p {
+        display: none;
+    }
+
+    .header img#uulogo {
+        width: calc(var(--header-height) - 1em);
+        object-fit: cover;
+        object-position: left;
     }
 }
