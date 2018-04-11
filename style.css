@@ -163,6 +163,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
+    margin-bottom: 1em;
 }
 
 .box.link {
@@ -192,6 +193,7 @@ body {
 .box.addproject {
     background-color: var(--red);
     color: white;
+    grid-column: -2 / -1;
 }
 
 .box.addproject:hover .fa {
@@ -436,16 +438,14 @@ textarea[name=notes] {
 .row>div[class^='col-'] {
     float: right;
 }
+.row>div[class^='col-']:not(:first-child) * {
+    margin-right: 1em;
+}
 
 .content .title {
     color: black;
     font-size: 2em;
     font-weight: bold;
-}
-
-.box {
-    margin-bottom: 1em;
-    margin-right: 1em;
 }
 
 .projectoverview .box * {
