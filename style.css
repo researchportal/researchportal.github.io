@@ -432,7 +432,7 @@ textarea[name=notes] {
 .row>div[class^='col-'] {
     float: right;
 }
-.row>div[class^='col-']:not(:first-child) * {
+.row>div[class^='col-']:not(:first-child) > * {
     margin-right: 1em;
 }
 
